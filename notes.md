@@ -47,3 +47,24 @@ We can create a **multi-line** comment using ``/*`` to start the comment and ``*
     Yep! This is, too.
     console.log("Not displayed, either.")
     */
+
+## Math.random()
+
+In JavaScript, the ``math.random()`` method returns a random decimal number between 0 and 1.
+
+Example:
+
+        console.log(Math.random());
+        console.log(Math.random());
+        console.log(Math.random());
+
+        0.0236966238022709
+        0.7397680104909345
+        0.4103022944399179
+
+To get a random integer between 0 to 9:
+
+        Math.floor(Math.random() * 10);
+
+This is multiplying the decimal number by 10 and then rounding it down to the nearest integer with ``Math.floor()``.
+
