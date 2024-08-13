@@ -315,3 +315,68 @@ The ``while`` loop uses a condition that is either ``true`` or ``false``.
 
 As long as the condition is ``true``, the code in the ``while`` loop will run. Otherwise, the loop ends when the condition becomes false.
 
+## Iterators in Loops
+
+To "**iterate**" means to run the code in a loop once. When the ``i`` iterator variable has reached a value that sets the loop's ``condition`` to ``false``, we can successfully exit the loop!
+
+        let i = initialValue;
+
+        while (condition) {
+                // Update the i iterator variable
+        }
+
+## for Loops
+
+The ``for`` loop works a bit differently, for we can **determine how many times we want it to run**
+
+        for (let i = initialValue; condition; updateIterator) {
+                // Code here
+        }
+
+- First, we define an ``i`` iterator variable with an ``initialValue``.
+- Before the first or next iteration, we test the ``i`` variable in the ``condition`` statement. If we get ``true``, we run the code. Otherwise, we exit the loop.
+- After each iteration, we ``updateIterator`` and change the value of ``i``.
+
+As the value of ``i`` changes, it should eventually cause the ``condition`` statement to return ``false`` so we can exit the ``for`` loop.
+
+Example:
+
+        for (let i = 1; i <= 10; i++) {
+                console.log(i);
+        }
+
+We use the following parts in the for loop:
+
+- ``let i = 1``: initializes an iterator variable.
+- ``i <= 10``: the conditional statement that is tested before each iteration.
+- ``i++``: this increments the iterator variable by 1 after each iteration.
+
+**Note**: The ``++`` operator increments a number value by 1. It's the same as writing ``i = i + 1``.
+
+Output:
+        1
+        2
+        3
+        4
+        5
+        6
+        7
+        8
+        9
+        10
+
+- Because we want ``i`` to change each time in the loop, we use the ``let`` keyword. 
+- We use a logical evaluation to determine if the current value of ``i`` is less than or equal to 10. After each iteration, we add 1 to the value of ``i`` (i.e., ``i++``).
+
+**Note**: You don't always have to print the iterator variable in the loop.
+
+Example:
+
+        for (let i = 1; i <= 3; i++) {
+                console.log("Beetlejuice!")
+        }
+
+        // Output:
+        // Beetlejuice!
+        // Beetlejuice!
+        // Beetlejuice!
